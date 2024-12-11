@@ -1,0 +1,14 @@
+13
+60C:\Users\Samsung Desktop\Desktop\TaskManager\source\index.ts133784143728136029 0
+62C:\Users\Samsung Desktop\Desktop\TaskManager\source\index.html133784123533469755 0
+49C:\Users\Samsung Desktop\Desktop\TaskManager\dist133784150468197321 1
+57C:\Users\Samsung Desktop\Desktop\TaskManager\package.json133784123181729569 0
+62C:\Users\Samsung Desktop\Desktop\TaskManager\package-lock.json133784121065597987 0
+51C:\Users\Samsung Desktop\Desktop\TaskManager\source133784118620714607 1
+61C:\Users\Samsung Desktop\Desktop\TaskManager\source\style.css133784145216006351 0
+58C:\Users\Samsung Desktop\Desktop\TaskManager\tsconfig.json133784120132066518 0
+68C:\Users\Samsung Desktop\Desktop\TaskManager\dist\index.5ecef563.css133784150467656470 0
+72C:\Users\Samsung Desktop\Desktop\TaskManager\dist\index.5ecef563.css.map133784150468093353 0
+67C:\Users\Samsung Desktop\Desktop\TaskManager\dist\index.959825d4.js133784150467698262 0
+71C:\Users\Samsung Desktop\Desktop\TaskManager\dist\index.959825d4.js.map133784150468093353 0
+60C:\Users\Samsung Desktop\Desktop\TaskManager\dist\index.html133784150468187291 0

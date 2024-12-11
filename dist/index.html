@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="/index.5ecef563.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciador de Tarefas</h1>
+        </header>
+        <main>
+            <section id="task-form">
+                <h2>Adicionar Nova Tarefa</h2>
+                <form id="form-create-task">
+                    <label for="task-title">Título:</label>
+                    <input type="text" id="task-title" required="">
+
+                    <label for="task-description">Descrição:</label>
+                    <textarea id="task-description" required=""></textarea>
+
+                    <label for="task-due-date">Data de Vencimento:</label>
+                    <input type="date" id="task-due-date" required="">
+
+                    <button type="submit">Adicionar Tarefa</button>
+                </form>
+            </section>
+
+            <section id="task-list">
+                <h2>Lista de Tarefas</h2>
+                <ul id="tasks-container">
+                    <!-- As tarefas serão renderizadas aqui -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="/index.959825d4.js" defer=""></script>
+</body>
+</html>
