@@ -49,7 +49,7 @@ class TaskRepository {
      * Remove uma tarefa do repositório pelo ID.
      * @param id O ID da tarefa a ser removida.
      */
-    removerTarefa(id: number): void {
+    removeTask(id: number): void {
         this.tasks = this.tasks.filter(task => task.id !== id);
     }
 
@@ -82,7 +82,7 @@ class TaskService {
      * @param dueDate A data de vencimento da tarefa.
      * @returns A tarefa criada.
      */
-    criarTarefa(title: string, description: string, dueDate: Date): Task {
+    createTask(title: string, description: string, dueDate: Date): Task {
         const task = new Task(
             Date.now(), // Usando timestamp como ID único
             title,
@@ -97,7 +97,7 @@ class TaskService {
      * Conclui uma tarefa pelo ID.
      * @param id O ID da tarefa a ser concluída.
      */
-    concluirTarefa(id: number): void {
+    taskDone(id: number): void {
         const task = this.repository.buscarTarefaPorId(id);
         if (task) task.alterarStatus("concluída");
     }
@@ -106,8 +106,8 @@ class TaskService {
      * Remove uma tarefa pelo ID.
      * @param id O ID da tarefa a ser removida.
      */
-    removerTarefa(id: number): void {
-        this.repository.removerTarefa(id);
+    removeTask(id: number): void {
+        this.repository.removeTask(id);
     }
 
     /**
@@ -153,12 +153,12 @@ class TaskView {
 
             // Adicionando eventos aos botões
             taskElement.querySelector(".complete-task")!.addEventListener("click", () => {
-                this.taskService.concluirTarefa(task.id);
+                this.taskService.taskDone(task.id);
                 this.renderListTask();
             });
 
             taskElement.querySelector(".delete-task")!.addEventListener("click", () => {
-                this.taskService.removerTarefa(task.id);
+                this.taskService.removeTask(task.id);
                 this.renderListTask();
             });
 
@@ -183,7 +183,7 @@ class TaskManager {
             const description = (document.getElementById("task-description") as HTMLTextAreaElement).value;
             const dueDate = new Date((document.getElementById("task-due-date") as HTMLInputElement).value);
 
-            this.taskService.criarTarefa(title, description, dueDate);
+            this.taskService.createTask(title, description, dueDate);
             this.taskView.renderListTask();
         });
 
